@@ -113,9 +113,8 @@ public:
     }
 };
 
-
 // Group all custom scripts
-void AddSC_QuestTrackerTest()
+void AddSC_QuestTrackerTestAC()
 {
     new QuestTrackerTest_Command();
 }
