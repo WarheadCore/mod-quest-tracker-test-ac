@@ -40,7 +40,7 @@ public:
     {
         if (!*args)
         {
-            handler->SendSysMessage("> Введён пустой аргумент");
+            handler->SendSysMessage("> Entered empty args");
             handler->SetSentErrorMessage(true);
             return false;
         }
@@ -51,7 +51,7 @@ public:
 
         if (!_playerCount || !_trackerType)
         {
-            handler->PSendSysMessage("> Неверые аргументы (%s) (%s)", _playerCount, _trackerType);
+            handler->PSendSysMessage("> Invalid args (%s) (%s)", _playerCount, _trackerType);
             handler->SetSentErrorMessage(true);
             return false;
         }
@@ -61,14 +61,14 @@ public:
 
         if (!playerCount)
         {
-            handler->PSendSysMessage("> Неверый аргументы playerCount (%u)", playerCount);
+            handler->PSendSysMessage("> Invalid args playerCount (%u)", playerCount);
             handler->SetSentErrorMessage(true);
             return false;
         }
 
         if (trackerType > 3)
         {
-            handler->PSendSysMessage("> Неверый аргументы trackerType (%u)", trackerType);
+            handler->PSendSysMessage("> Invalid args trackerType (%u)", trackerType);
             handler->SetSentErrorMessage(true);
             return false;
         }
