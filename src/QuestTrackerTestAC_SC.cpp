@@ -83,10 +83,12 @@ public:
 
         sLog->outString("> QuestTracker: Add queue. Type (%u). Players (%u)", trackerType, playerCount);
 
+        handler->PSendSysMessage("|cffff0000# |cff00ff00> QuestTracker: Add. Type (%u). Players (%u)", trackerType, playerCount);
+
         while (playerCount)
         {
-            uint32 questID = urand(0, 10000);
-            uint32 charID = urand(0, 10000);
+            uint32 questID = urand(0, 1000000);
+            uint32 charID = urand(0, 1000000);
 
             switch (trackerType)
             {
